@@ -1,7 +1,7 @@
 clear all; close all; clc;
 addpath('.')
 cd ./recordings/MaleSubjs/
-K = 5;     % k-fold validation
+K = 10;     % k-fold validation
 eSz = 600;
 lag = 500;
 d = dir;
