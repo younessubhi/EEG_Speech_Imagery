@@ -1,6 +1,6 @@
 clear all; close all; clc;
 addpath('.')
-cd ./recordings/MaleSubjs/
+cd ./recordings/MaleSubjs
 K = 10;     % k-fold validation
 eSz = 600;
 lag = 500;
