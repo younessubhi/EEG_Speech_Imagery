@@ -21,10 +21,11 @@ for k = 1:N
     [TP(k),FP(k),TN(k),FN(k),W] = KFoldValidate(nts', smi',K,lag,eSz);
     cd ..
     W2 = mean(W,3);
+    W3 = W2(:,[1:3,14:16])
     figure
-    for II = 1:16
-        subplot(4,4,II)
-        topoplot(W2(:,II),'channel_locations.loc');
+    for II = 1:6
+        subplot(3,2,II)
+        topoplot(W3(:,II),'channel_locations.loc');
     end
     toc
     
@@ -52,10 +53,11 @@ for k = 1:N
     [TP(k),FP(k),TN(k),FN(k),W] = KFoldValidate(nts', smi',K,lag,eSz);
     cd ..
     W2 = mean(W,3);
+    W3 = W2(:,[1:3,14:16])
     figure
-    for II = 1:16
-        subplot(4,4,II)
-        topoplot(W2(:,II),'channel_locations.loc');
+    for II = 1:6
+        subplot(3,2,II)
+        topoplot(W3(:,II),'channel_locations.loc');
     end
     toc
     
