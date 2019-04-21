@@ -26,7 +26,7 @@ for k = 1:N
     cd ..
     W2 = mean(W,3);
     W3 = W2(:,[1:3,14:16])
-    W_t_struct = [W_t; {W3}];
+    W_t_struct = [W_t_struct; {W3}];
     W_t = [W_t; [W3]];
     figure
     for II = 1:6
@@ -62,7 +62,7 @@ for k = 1:N
     cd ..
     W2 = mean(W,3);
     W3 = W2(:,[1:3,14:16])
-    W_t_struct = [W_t; {W3}];
+    W_t_struct = [W_t_struct; {W3}];
     W_t = [W_t; [W3]];
     figure
     for II = 1:6
