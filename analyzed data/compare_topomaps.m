@@ -12,18 +12,67 @@ i = 1;
 
 while i < 18;
     subj{i} = subjs{i, 1};
-    subj_first{i} = subj{i}(:,1:3);
-    subj_last{i} = subj{i}(:,4:6);
+    subj_1{i} = subj{i}(:,1);
+    subj_2{i} = subj{i}(:,2);
+    subj_3{i} = subj{i}(:,3);
+    subj_4{i} = subj{i}(:,4);
+    subj_5{i} = subj{i}(:,5);
+    subj_6{i} = subj{i}(:,6);
     i = i + 1;
 end
 
-a = horzcat(subj_first{:})
-
 % topoplot
 
-for II = 1:51
-    subplot(17,3,II)
-    topoplot(a(:,II),'channel_locations.loc');
+a1 = horzcat(subj_1{:})
+
+figure(1)
+for II = 1:17
+    subplot(3,6,II)
+    topoplot(a1(:,II),'channel_locations.loc');
+end
+
+a2 = horzcat(subj_2{:})
+
+figure(2)
+for II = 1:17
+    subplot(3,6,II)
+    topoplot(a2(:,II),'channel_locations.loc');
+end
+
+
+a3 = horzcat(subj_3{:})
+
+figure(3)
+for II = 1:17
+    subplot(3,6,II)
+    topoplot(a3(:,II),'channel_locations.loc');
+end
+
+
+a4 = horzcat(subj_4{:})
+
+figure(4)
+for II = 1:17
+    subplot(3,6,II)
+    topoplot(a4(:,II),'channel_locations.loc');
+end
+
+
+figure(5)
+a5 = horzcat(subj_5{:})
+
+for II = 1:17
+    subplot(3,6,II)
+    topoplot(a5(:,II),'channel_locations.loc');
+end
+
+
+figure(6)
+a6 = horzcat(subj_6{:})
+
+for II = 1:17
+    subplot(3,6,II)
+    topoplot(a6(:,II),'channel_locations.loc');
 end
 
 %subj_first = subj_first';
