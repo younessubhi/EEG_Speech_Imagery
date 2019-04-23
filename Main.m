@@ -74,7 +74,7 @@ for k = 1:N
 end
 
 % Append data for specificity and sensitivity analysis
-FemaleTable = [TP,TN,FP,FN];
+FemaleTable = [TP,FP,TN,FN];
 
 cd ../..
 
