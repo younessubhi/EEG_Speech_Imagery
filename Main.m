@@ -22,7 +22,7 @@ for k = 1:N
     eval(str)
     
     [nts,m,smi,mi] = TrialsMerge;
-    [TP(k),FP(k),TN(k),FN(k),W] = KFoldValidate(nts', mi',K,lag,eSz);
+    [TP(k),FP(k),TN(k),FN(k),W] = KFoldValidate(nts', m',K,lag,eSz);
     cd ..
     W2 = mean(W,3);
     W3 = W2(:,[1:3,14:16])
@@ -58,7 +58,7 @@ for k = 1:N
     eval(str)
     
     [nts,m,smi,mi] = TrialsMerge;
-    [TP(k),FP(k),TN(k),FN(k),W] = KFoldValidate(nts', mi',K,lag,eSz);
+    [TP(k),FP(k),TN(k),FN(k),W] = KFoldValidate(nts',m',K,lag,eSz);
     cd ..
     W2 = mean(W,3);
     W3 = W2(:,[1:3,14:16])

@@ -31,7 +31,8 @@ for II = 1:17
     topoplot(a1(:,II),'channel_locations.loc');
 end
 
-savefig('CSP1.fig')
+
+% savefig('CSP1.fig')
 
 
 a2 = horzcat(subj_2{:})
@@ -42,7 +43,7 @@ for II = 1:17
     topoplot(a2(:,II),'channel_locations.loc');
 end
 
-savefig('CSP2.fig')
+% savefig('CSP2.fig')
 
 a3 = horzcat(subj_3{:})
 
@@ -52,7 +53,7 @@ for II = 1:17
     topoplot(a3(:,II),'channel_locations.loc');
 end
 
-savefig('CSP3.fig')
+% savefig('CSP3.fig')
 
 a4 = horzcat(subj_4{:})
 
@@ -62,7 +63,7 @@ for II = 1:17
     topoplot(a4(:,II),'channel_locations.loc');
 end
 
-savefig('CSP4.fig')
+% savefig('CSP4.fig')
 
 figure(5)
 a5 = horzcat(subj_5{:})
@@ -72,7 +73,7 @@ for II = 1:17
     topoplot(a5(:,II),'channel_locations.loc');
 end
 
-savefig('CSP5.fig')
+% savefig('CSP5.fig')
 
 figure(6)
 a6 = horzcat(subj_6{:})
@@ -82,7 +83,13 @@ for II = 1:17
     topoplot(a6(:,II),'channel_locations.loc');
 end
 
-savefig('CSP6.fig')
+% savefig('CSP6.fig')
+p_files = 0
+
+for p_files = 1:6
+    str_saveas = sprintf('CSP_imagery_%d', p_files)
+    saveas(p_files, str_saveas, 'pdf');
+end
 
 %subj_first = subj_first';
 %subj_last = subj_last';
