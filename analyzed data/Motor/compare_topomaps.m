@@ -27,53 +27,62 @@ a1 = horzcat(subj_1{:})
 
 figure(1)
 for II = 1:17
-    subplot(3,6,II)
+    subplot(5,4,II)
     topoplot(a1(:,II),'channel_locations.loc');
 end
+
+savefig('CSP1.fig')
+
 
 a2 = horzcat(subj_2{:})
 
 figure(2)
 for II = 1:17
-    subplot(3,6,II)
+    subplot(5,4,II)
     topoplot(a2(:,II),'channel_locations.loc');
 end
 
+savefig('CSP2.fig')
 
 a3 = horzcat(subj_3{:})
 
 figure(3)
 for II = 1:17
-    subplot(3,6,II)
+    subplot(5,4,II)
     topoplot(a3(:,II),'channel_locations.loc');
 end
 
+savefig('CSP3.fig')
 
 a4 = horzcat(subj_4{:})
 
 figure(4)
 for II = 1:17
-    subplot(3,6,II)
+    subplot(5,4,II)
     topoplot(a4(:,II),'channel_locations.loc');
 end
 
+savefig('CSP4.fig')
 
 figure(5)
 a5 = horzcat(subj_5{:})
 
 for II = 1:17
-    subplot(3,6,II)
+    subplot(5,4,II)
     topoplot(a5(:,II),'channel_locations.loc');
 end
 
+savefig('CSP5.fig')
 
 figure(6)
 a6 = horzcat(subj_6{:})
 
 for II = 1:17
-    subplot(3,6,II)
+    subplot(5,4,II)
     topoplot(a6(:,II),'channel_locations.loc');
 end
+
+savefig('CSP6.fig')
 
 %subj_first = subj_first';
 %subj_last = subj_last';
