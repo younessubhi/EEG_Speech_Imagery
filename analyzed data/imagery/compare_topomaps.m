@@ -75,6 +75,7 @@ for II = 1:17
     topoplot(a6(:,II),'channel_locations.loc');
 end
 
+
 %subj_first = subj_first';
 %subj_last = subj_last';
 
