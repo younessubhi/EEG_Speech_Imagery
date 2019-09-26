@@ -44,6 +44,8 @@ classIdx = [zeros(nFeat,1);ones(nFeat,1)];
 
 SVM = fitcsvm(train,classIdx);
 
+%% ROC
+
 
 %% Check prediction model
 TP = sum(predict(SVM,y3)==0);
